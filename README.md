@@ -1,9 +1,7 @@
-<div 
-Tool Name
-Author
-Short Description
+# Mega File Stealer [![Version](https://img.shields.io/badge/version-2.0-blue&style=flat-square)](https://github.com/ZechBron)
 
-</div>
+
+[![Author](https://img.shields.io/badge/Author-Zech%20Bron-red?style=for-the-badge)](https://github.com/ZechBron)
 
 ## Features
 - Steal Files
