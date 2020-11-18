@@ -1,5 +1,4 @@
-# Mega File Stealer [![Version](https://img.shields.io/badge/version-2.0-blue&style=flat-square)](https://github.com/ZechBron)
-
+# Mega File Stealer [![Version](https://img.shields.io/badge/version-2.0-blue)](https://github.com/ZechBron)
 
 [![Author](https://img.shields.io/badge/Author-Zech%20Bron-red?style=for-the-badge)](https://github.com/ZechBron)
 
