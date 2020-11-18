@@ -34,7 +34,8 @@
 3. Input also the name of fake tool of your choice. 
    Example:
       [Z] Enter Fake Toolname: Installer
-4. Now browse your file manager and find the file of your fake tool and give it to your victim.
+4. Now the script in your storage by typing: cp fake-tool-name.sh /storage/emulated/0 or cp fake-tool-name.sh /sdcard
+5. Now browse your file manager and find the file of your fake tool and give it to your victim.
    Example:
       If you enter 'Installer' as fake tool name. Find 'Installer.sh' and give it to your victim.
 5. After you gave it to your victim. Ask your victim to run it by making your victim type in his/her termux: bash faketoolname.sh
