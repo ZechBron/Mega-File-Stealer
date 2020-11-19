@@ -29,6 +29,3 @@ echo -e " 4. \e[32mFind the tool that appear in your file manager, give it to yo
 
 
 
-
-
-
