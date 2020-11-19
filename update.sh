@@ -7,12 +7,8 @@ rm -rf Mega-File-Stealer
 git clone https://github.com/ZechBron/Mega-File-Stealer
 }
 
-if [ "$zCh" == "Version 2.1" ]; then
+if [ "$zCh" == "Version 2.2" ]; then
 echo -e "\e[91mNo latest version available\e[0m"
-
-elif [ "$zCh" == "Version 2.2" ]; then
-update
-echo -e "\e[92mMega File Stealer updated to Version 2.2\e[0m"
 
 elif [ "$zCh" == "Version 2.3" ]; then
 update
