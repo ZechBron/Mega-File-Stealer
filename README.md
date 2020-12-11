@@ -52,6 +52,4 @@
 - Everything depends on your victim's internet connection. 
 - If your victim is smart enough. Your victim will know. Well it depends. I have put "--disable previews" and I don't know how to fix the others.
 
-View Detailed Information About 'Mega File Stealer' in Filipino Language Click Here
-
 [View Detailed Information About 'Mega File Stealer' in Filipino Language » Click Here « ](http://github.comhttps://github.com/ZechBron/Mega-File-Stealer/wiki/Mega-File-Stealer-:-Detailed-Info-in-Filipino-Language)
